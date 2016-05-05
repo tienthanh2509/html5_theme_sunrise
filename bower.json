@@ -1,0 +1,27 @@
+{
+  "name": "php-getting-started",
+  "homepage": "https://github.com/tienthanh2509/html5_theme_sunrise",
+  "authors": [
+    "Phạm Tiến Thành <tienthanh.dqc@gmail.com>"
+  ],
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "^2.2.3",
+    "modernizr": "^3.3.1",
+    "jquery.fitvids": "^1.1.0",
+    "imagesloaded": "^4.1.0",
+    "jquery-zoom": "^1.7.15",
+    "magnific-popup": "^1.1.0",
+    "owl.carousel": "^2.1.1"
+  }
+}

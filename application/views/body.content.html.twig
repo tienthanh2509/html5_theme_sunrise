@@ -14,63 +14,110 @@
                 <!-- Menu sản phẩm -->
                 {% block body_content_sidebar_menu %}
                     <ul id="side-menu">
-                        <li><a class="newfont" href="/">Home</a></li>
-                        <li class="has-sub level-1">
-                            <a class="newfont top-link" href="/collections/toys">Toys</a>
-                            <ul class="animated">
-                                <li class="has-sub level-2"> <a class="top-link" href="/collections/toys/Animal">Animals</a>
-                                    <ul>
-                                        <li> <a href="/collections/toys/bears" title="">Bears</a> </li>
-                                        <li> <a href="/collections/toys/monkeys" title="">Monkeys</a> </li>
-                                        <li> <a href="/collections/toys" title="">View all</a> </li>
-                                    </ul>
-                                </li>
-                                <li> <a class="" href="/collections/toys/Vehicle">Vehicles</a> </li>
-                                <li> <a class="" href="/collections/dolls">Dolls</a> </li>
-                                <li> <a class="" href="/collections/all-products/Puzzle">Puzzles</a> </li>
+                        <li><a class="newfont" href="/">Trang chủ</a></li>
+                        <li class="has-sub level-1 active">
+                            <a class="newfont top-link" href="/tivi">Tivi</a>
+                            <ul>
+                                <li><a href="/tivi">Tivi</a></li>
+                                <li><a href="/loa">Loa</a></li>
+                                <li><a href="/dan-may">Dàn âm thanh</a></li>
+                                <li><a href="/dvd-karaoke">Đầu DVD</a></li>
                             </ul>
                         </li>
-                        <li class="has-sub level-1"> <a class="newfont top-link" href="/collections/accessories">Accessories</a>
-                            <ul class="animated">
-                                <li> <a class="" href="/collections/footwear">Footwear</a> </li>
-                                <li> <a class="" href="/collections/sunglasses">Sunglasses</a> </li>
+                        <li class="has-sub level-1 active">
+                            <a class="newfont top-link" href="/gia-dung">Gia Dụng</a>
+                            <ul>
+                                <li>
+                                    <a href="/ban-ui">Bàn ủi</a>
+                                    <a href="/bep-dien">Bếp điện</a>
+                                    <a href="/bep-gas">Bếp gas</a>
+                                    <a href="/binh-dun-sieu-toc">Bình đun siêu tốc</a>
+                                    <a href="/binh-thuy-dien">Bình thủy điện</a>
+                                    <a href="/bo-noi">Bộ nồi</a>
+                                    <a href="/cay-nuoc-nong-lanh">Cây nước nóng lạnh</a>
+                                    <a href="/chao-chong-dinh">Chảo chống dính</a>
+                                    <a href="/den-suoi">Đèn sưởi</a>
+                                    <a href="/do-dung">Đồ dùng</a>
+                                    <a href="/lau-dien">Lẩu điện</a>
+                                    <a href="/lo-nuong">Lò nướng</a>
+                                </li>
+                                <li>
+                                    <a href="/lo-vi-song">Lò vi sóng</a>
+                                    <a href="/may-danh-trung">Máy đánh trứng</a>
+                                    <a href="/may-lam-sua-dau-nanh">Máy làm sữa đậu nành</a>
+                                    <a href="/may-hut-bui">Máy hút bụi</a>
+                                    <a href="/may-ep-trai-cay">Máy ép trái cây</a>
+                                    <a href="/may-say-toc">Máy sấy tóc</a>
+                                    <a href="/may-tao-kieu-toc">Máy tạo kiểu tóc</a>
+                                    <a href="/may-xay-sinh-to">Máy xay sinh tố</a>
+                                    <a href="/noi-ap-suat">Nồi áp suất</a>
+                                    <a href="/noi-com-dien">Nồi cơm điện</a>
+                                    <a href="/may-nuoc-nong">Máy nước nóng</a>
+                                    <a href="/quat-suoi">Quạt sưởi</a>
+                                </li>
                             </ul>
                         </li>
-                        {#<li class="has-sub"> <a href="/collections/all" class="top-link newfont">Shop by tag</a>
-                            <ul id="search-tags">
+                        <li>
+                            <a class="newfont" href="/tu-lanh">Tủ Lạnh</a>
+                        </li>
+                        <li>
+                            <a class="newfont" href="/may-lanh">Máy Lạnh</a>
+                        </li>
+                        <li>
+                            <a class="newfont" href="/quat">Quạt</a>
+                        </li>
+                        <li class="has-sub level-1 active">
+                            <a class="newfont top-link" href="/may-giat">Máy Giặt</a>
+                            <ul>
                                 <li>
-                                    {% for tag in tags %}
-                                    <a class="tag" href="{{ tag.url }}">{{ tag.name }}</a>
-                                    {% endfor %}
+                                    <a href="/may-giat">Máy Giặt</a>
+                                </li>
+                                <li>
+                                    <a href="/may-say-quan-ao">Máy sấy quần áo</a>
                                 </li>
                             </ul>
-                        </li>#}
-                        {#<li class="has-sub"> <a href="/blogs/news" class="top-link newfont">Latest posts</a>
-                            <ul id="side-posts">
-                                <li>
-                                    <a class="article-link" href="/blogs/news/12288497-test-vimeo-video"> <strong>Test Vimeo Video</strong> <span>Postino - I Love It (OFFICIAL MUSIC VIDEO) from Will Kindrick on Vimeo.</span> </a>
-                                </li>
-                                <li>
-                                    <a class="article-link" href="/blogs/news/12288445-test-blog-image"> <strong>Test Blog Image</strong> <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque quis dapibus dui. Aliquam euismod tellus...</span> </a>
-                                </li>
-                                <li>
-                                    <a class="article-link" href="/blogs/news/1657222-test-youtube-video"> <strong>Test Youtube Video</strong> <span>Here's an example with a YouTube vid embedded... Looks cool right? Lorem ipsum dolor sit...</span> </a>
-                                </li>
-                                <li>
-                                    <a class="article-link" href="/blogs/news/1657212-test-lists"> <strong>Test Lists</strong> <span>Here’s a numbered list: Item one Item two Item three Here’s a bulleted list: Item...</span> </a>
-                                </li>
-                                <li>
-                                    <a class="article-link" href="/blogs/news/1657202-test-paragraphs"> <strong>Test Paragraphs</strong> <span>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Proin ac felis vel enim eleifend porta....</span> </a>
-                                </li>
-                            </ul>
-                        </li>#}
+                        </li>
                     </ul>
                 {% endblock %}
             </nav>
 
+            <aside class="top-sellers">
+                <h3>Bán chạy</h3>
+                <ul>
+                    <li>
+                        <a href="/products/asanzo-25s400" title="Tivi Asanzo 25 inch 25S400">
+                            <img src="https://cdn2.dmx.vn/Products/Images/1942/72689/asanzo-25s400-10-550x340.jpg" alt="Tivi Asanzo 25 inch 25S400">
+                            <span class="top-title">Tivi Asanzo 25 inch 25S400
+                                <i><span class="money" data-currency-vnd="2.790.000₫">2.790.000₫</span></i>
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/products/aqua-aqw-s70kt" title="Máy giặt AQUA 7kg AQW-S70KT">
+                            <img src="https://cdn3.dmx.vn/Products/Images/1944/70026/aqua-aqw-s70kt-nkk-300x300.jpg" alt="Máy giặt AQUA 7kg AQW-S70KT">
+                            <span class="top-title">Máy giặt AQUA 7kg AQW-S70KT
+                                <i>
+                                    <del>
+                                        <span class="money" data-currency-usd="3.690.000₫">3.690.000₫</span>
+                                    </del>
+                                    <span class="money" data-currency-usd="3.590.000₫">3.590.000₫</span></i>
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/products/ban-asia-b08002" title="Quạt bàn Asia B08002">
+                            <img src="https://cdn4.dmx.vn/Products/Images/1992/66555/quat-nowatermark-300x300.jpg" alt="Quạt bàn Asia B08002">
+                            <span class="top-title">Tivi Asanzo 25 inch 25S400
+                                <i><span class="money" data-currency-vnd="210.000₫">210.000₫</span></i>
+                            </span>
+                        </a>
+                    </li>
+                </ul>
+            </aside>
+
             {% block body_content_sidebar_social_link %}
                 <aside class="social-links">
-                    <h3>Stay in touch</h3>
+                    <h3>Chia sẻ</h3>
                     <a href="https://twitter.com/shopify" title="Twitter">
                         <img src="assets/img/social-icon/icon-twitter.png" alt="Twitter">
                     </a>
@@ -85,48 +132,6 @@
                     </a>
                 </aside>
             {% endblock %}
-
-            {#<aside class="subscribe-form">
-                <h3>Newsletter</h3>
-                <form class="newsletter" action="" method="post">
-                    <p>Sign up to our newsletter for the latest news and special offers.</p>
-                    <fieldset>
-                        <input type="email" placeholder="type your email..." class="required email input-text" name="EMAIL">
-                        <button type="submit" class="button">Subscribe</button>
-                    </fieldset>
-                </form>
-            </aside>#}
-            <aside class="top-sellers">
-                <h3>Popular products</h3>
-                <ul>
-                    <li>
-                        <a href="/products/red-robot" title="Red Robot"><img src="//cdn.shopify.com/s/files/1/0049/3732/products/51_medium.jpg?v=1334938938" alt="Red Robot"> <span class="top-title">Red Robot <i> <span class="money" data-currency-usd="$175.49">$175.49</span> </i>
-                            </span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="/products/rubiks-cube" title="Rubik's Cube"><img src="//cdn.shopify.com/s/files/1/0049/3732/products/10_medium.jpg?v=1334936941" alt="Rubik's Cube"> <span class="top-title">Rubik's Cube <i> <span class="money" data-currency-usd="$9.00">$9.00</span> </i>
-                            </span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="/products/dancing-bull" title="Dancing Bull"><img src="//cdn.shopify.com/s/files/1/0049/3732/products/53_medium.jpg?v=1334939034" alt="Dancing Bull"> <span class="top-title">Dancing Bull <i> <del><span class="money" data-currency-usd="$199.00">$199.00</span>
-                                    </del> <span class="money" data-currency-usd="$144.50">$144.50</span> </i>
-                            </span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="/products/blue-toy-car" title="Blue Toy Car"><img src="//cdn.shopify.com/s/files/1/0049/3732/products/5_medium.jpg?v=1334936803" alt="Blue Toy Car"> <span class="top-title">Blue Toy Car <i> <span class="money" data-currency-usd="$14.50">$14.50</span> </i>
-                            </span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="/products/cuddly-lion" title="Cuddly Lion"><img src="//cdn.shopify.com/s/files/1/0049/3732/products/36_medium.jpg?v=1334938352" alt="Cuddly Lion"> <span class="top-title">Cuddly Lion <i> <span class="money" data-currency-usd="$7.99">$7.99</span> </i>
-                            </span>
-                        </a>
-                    </li>
-                </ul>
-            </aside>
         </section>
     {% endblock %}
 
@@ -190,49 +195,68 @@
             </li>
         </ul>
         <div class="scroller">
-            <h3 class="scroll-title">Our brands</h3>
+            <h3 class="scroll-title">Các Đối Tác Lớn</h3>
             <div id="brand-scroller" class="owl-carousel owl-theme" style="opacity: 1; display: block;">
                 <div class="owl-wrapper-outer">
                     <div class="owl-wrapper" style="width: 2590px; left: 0px; display: block; transition: all 500ms ease; transform: translate3d(-185px, 0px, 0px);">
                         <div class="owl-item" style="width: 185px;">
                             <div class="brand">
-                                <a href="/collections/all"><img class="lazyOwl" alt="Brand" src="//cdn.shopify.com/s/files/1/0049/3732/t/28/assets/brand1.png?890626430065088156" style="display: inline;">
+                                <a href="/doi-tac/samsung">
+                                    <img class="lazyOwl" alt="Samsung partner" src="assets/img/foot-partner/samsung.png" style="display: inline;">
                                 </a>
                             </div>
                         </div>
+                    </div>
+                    <div class="owl-wrapper" style="width: 2590px; left: 0px; display: block; transition: all 500ms ease; transform: translate3d(-185px, 0px, 0px);">
                         <div class="owl-item" style="width: 185px;">
                             <div class="brand">
-                                <a href="/collections/all"><img class="lazyOwl" alt="Brand" src="//cdn.shopify.com/s/files/1/0049/3732/t/28/assets/brand2.png?890626430065088156" style="display: inline;">
+                                <a href="/doi-tac/sanyo">
+                                    <img class="lazyOwl" alt="Sanyo partner" src="assets/img/foot-partner/sanyo.png" style="display: inline;">
                                 </a>
                             </div>
                         </div>
+                    </div>
+                    <div class="owl-wrapper" style="width: 2590px; left: 0px; display: block; transition: all 500ms ease; transform: translate3d(-185px, 0px, 0px);">
                         <div class="owl-item" style="width: 185px;">
                             <div class="brand">
-                                <a href="/collections/all"><img class="lazyOwl" alt="Brand" src="//cdn.shopify.com/s/files/1/0049/3732/t/28/assets/brand3.png?890626430065088156" style="display: inline;">
+                                <a href="/doi-tac/toshiba">
+                                    <img class="lazyOwl" alt="Toshiba partner" src="assets/img/foot-partner/toshiba.png" style="display: inline;">
                                 </a>
                             </div>
                         </div>
+                    </div>
+                    <div class="owl-wrapper" style="width: 2590px; left: 0px; display: block; transition: all 500ms ease; transform: translate3d(-185px, 0px, 0px);">
                         <div class="owl-item" style="width: 185px;">
                             <div class="brand">
-                                <a href="/collections/all"><img class="lazyOwl" alt="Brand" src="//cdn.shopify.com/s/files/1/0049/3732/t/28/assets/brand4.png?890626430065088156" style="display: inline;">
+                                <a href="/doi-tac/lg">
+                                    <img class="lazyOwl" alt="LG partner" src="assets/img/foot-partner/lg.png" style="display: inline;">
                                 </a>
                             </div>
                         </div>
+                    </div>
+                    <div class="owl-wrapper" style="width: 2590px; left: 0px; display: block; transition: all 500ms ease; transform: translate3d(-185px, 0px, 0px);">
                         <div class="owl-item" style="width: 185px;">
                             <div class="brand">
-                                <a href="/collections/all"><img class="lazyOwl" alt="Brand" style="display: inline;" src="//cdn.shopify.com/s/files/1/0049/3732/t/28/assets/brand5.png?890626430065088156">
+                                <a href="/doi-tac/hitachi">
+                                    <img class="lazyOwl" alt="Hitachi partner" src="assets/img/foot-partner/hitachi.png" style="display: inline;">
                                 </a>
                             </div>
                         </div>
+                    </div>
+                    <div class="owl-wrapper" style="width: 2590px; left: 0px; display: block; transition: all 500ms ease; transform: translate3d(-185px, 0px, 0px);">
                         <div class="owl-item" style="width: 185px;">
                             <div class="brand">
-                                <a href="/collections/all"><img class="lazyOwl" alt="Brand" style="display: inline;" src="//cdn.shopify.com/s/files/1/0049/3732/t/28/assets/brand6.png?890626430065088156">
+                                <a href="/doi-tac/sony">
+                                    <img class="lazyOwl" alt="Sony partner" src="assets/img/foot-partner/sony.png" style="display: inline;">
                                 </a>
                             </div>
                         </div>
+                    </div>
+                    <div class="owl-wrapper" style="width: 2590px; left: 0px; display: block; transition: all 500ms ease; transform: translate3d(-185px, 0px, 0px);">
                         <div class="owl-item" style="width: 185px;">
                             <div class="brand">
-                                <a href="/collections/all"><img class="lazyOwl" alt="Brand" style="display: inline;" src="//cdn.shopify.com/s/files/1/0049/3732/t/28/assets/brand7.png?890626430065088156">
+                                <a href="/doi-tac/panasonic">
+                                    <img class="lazyOwl" alt="Panasonic partner" src="assets/img/foot-partner/panasonic.png" style="display: inline;">
                                 </a>
                             </div>
                         </div>
@@ -249,10 +273,7 @@
             </div>
         </div>
         <div class="welcome">
-            <p>Sunrise is a unique Shopify theme. It's responsive too so it'll look great on all your gadgets including desktops, tablets and phones. Give it a whirl on your iPad or iPhone to see how that works.</p>
-            <p>You can easily change the whole look and feel of your site including colors, typography, graphics etc.</p>
-            <p>It's packed with awesome features including: sidebar accordion, newsletter signup, product image zoom that supports multiple images, home slideshow with optional captions, navigation dropdowns, Google fonts integration, social links, social sharing, off-canvas mobile menu, easy to add videos (no extra code needed), SEO ready, customized checkout, custom header/banner on your checkout page.</p>
-            <p>This home page text is completely optional. You can easily hide it using the theme settings or you can choose text from a different page to display here!</p>
+            <p>Hàng hoá tại XXX vô cùng đa dạng, từ các nhóm hàng lớn như Tivi, Tủ Lạnh, Máy Giặt, Máy Lạnh… đến các nhóm hàng Gia dụng như: Nồi Cơm Điện, Bếp Ga, Bếp Điện Từ… Điện máy XANH cũng kinh doanh các mặt hàng như: Điện Thoại, Máy Tính Bảng, Laptop, Phụ Kiện…</p>
         </div>
     </section>
 </div>
