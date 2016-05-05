@@ -1,0 +1,136 @@
+/* 
+    Created on : May 5, 2016, 7:53:21 PM
+    Author     : phamthanh
+*/
+
+/*------------------------------------------------------------------*/
+/* PRODUCT
+/*------------------------------------------------------------------*/
+.cartableProduct {
+    margin: 0 0 0.5em 0;
+}
+
+#product-images {
+    margin: 0 0 1em 0;
+}
+
+.productimage {
+    background: $thumb-bg;
+    padding: 1em;
+    border-radius: 12px;
+    border: $thumb-bg 1px solid;
+}
+
+.smallimg {
+    padding: 0.5em;
+}
+
+.productimage:hover, .productimage:focus, .active-img {
+    border-color: $link-color;
+    outline: none;
+}
+
+#product-shot {
+    position: relative;
+    display: block;
+    margin: 0 0 0.25em 0;
+    text-align: center;
+}
+
+#product-shot .sale {
+    left: 5px;
+    top: 5px;
+}
+
+#more-images {
+    padding: 0 60px;
+    text-align: center;
+}
+
+#more-images a {
+    display: inline-block;
+    max-width: 100%;
+}
+
+#more-images img {
+    max-width: 100%;
+}
+
+.single-image #more-images {
+    display: none !important;
+}
+
+.product-price-wrap {
+    font-size: 2em;
+    margin: 0 0 0.5em 0;
+}
+
+.product-compare-price {
+    opacity: 0.6;
+    font-size: 0.7em;
+}
+
+.selector-wrapper {
+    margin: 0 0 1em 0;
+}
+
+.selector-wrapper select {
+    width: 100%;
+}
+
+.quick-actions .button {
+    font-size: 1.5em;
+    margin: 0 0 1em 0;
+}
+
+.quick-actions p {
+    margin-top: 0px;
+    max-width: 100px;
+}
+
+#product-description {
+    width: 100%;
+    clear: both;
+    border-top: $content-borders 1px solid;
+    padding: 1em 0;
+}
+
+#share-me {
+    border-top: $content-borders 1px solid;
+    padding: 1em 0;
+}
+
+#related h3 {
+    margin: 0 0 0.4em 0;
+}
+
+#related .product-title {
+    font-size: 0.8em;
+}
+
+.var-msg {
+    display: none;
+    background: #bd3737;
+    color: #fff;
+    padding: 1em;
+    border-radius: 12px;
+    margin: 0 0 1em 0;
+    font-weight: bold;
+}
+
+.product-nav {
+    font-size: 0.75em;
+}
+
+.product-nav a {
+    text-decoration: none;
+}
+
+.size-info {
+    font-weight: bold;
+    padding: 0 0 1em 0;
+}
+
+.sku-info {
+    margin: 0 0 10px 0;
+}

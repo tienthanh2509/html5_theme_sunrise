@@ -1,0 +1,112 @@
+/* 
+    Created on : May 5, 2016, 7:50:54 PM
+    Author     : phamthanh
+*/
+
+/*------------------------------------------------------------------*/
+/* BLOGS AND PAGES
+/*------------------------------------------------------------------*/
+#blog-categories {
+    margin: 0 0 1em 0;
+}
+
+#blog-categories label {
+    display: none;
+}
+
+.article-list {
+    border-bottom: $content-borders 1px solid;
+    padding: 0 0 1em 0;
+    margin: 0 0 3em 0;
+}
+
+.article-list.last {
+    border: none;
+}
+
+.article h2 a {
+    text-decoration: none;
+}
+
+.article-meta {
+    font-size: 0.8em;
+    opacity: 0.7;
+    margin: 0 0 1em 0;
+}
+
+.social-article {
+    margin: 0 0 1em 0;
+}
+
+.article-nav {
+    margin: 0 0 2em 0;
+    border-top: $content-borders 1px solid;
+    padding: 1em 0 0 0;
+}
+
+.article-nav .go-left {
+    float: left;
+}
+
+.article-nav .go-right {
+    float: right;
+}
+
+.article-featured-image {
+    margin: 0 0 1em 0;
+}
+
+.contact-form {
+    margin: 1em 0;
+}
+
+.contact-us label {
+    font-size: 0.85em;
+}
+
+.feedback, #wrapper-response {
+    padding: 1em;
+    background: #55c900;
+    color: #fff;
+    border-radius: 12px;
+    margin: 0 0 1em 0;
+}
+
+.errorForm, .feedback.errors {
+    background: #fff;
+    color: #f00;
+    border: #f00 3px dashed;
+}
+
+#comments {
+    background: $comments-bg;
+    background: rgba($comments-bg, 0.3);
+    padding: 2em;
+    border-radius: 12px;
+    margin: 0 0 1em 0;
+}
+
+#add-comment-title {
+    margin: 0 0 0.5em 0;
+}
+
+.comment-list {
+    margin: 0 0 2em 0;
+    list-style: none;
+    padding: 0;
+}
+
+.comment-list li {
+    background: rgba($comments-bg, 0.3);
+    padding: 1em;
+    border-radius: 9px;
+    margin: 0 0 0.5em 0;
+}
+
+.comment-list h6 {
+    font-size: 1.25em;
+}
+
+.comment-list h6 span {
+    opacity: 0.6;
+}

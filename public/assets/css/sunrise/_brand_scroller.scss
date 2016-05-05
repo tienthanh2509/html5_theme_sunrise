@@ -1,0 +1,53 @@
+/* 
+    Created on : May 5, 2016, 8:12:35 PM
+    Author     : phamthanh
+*/
+
+/*------------------------------------------------------------------*/
+/* BRAND SCROLLER
+/*------------------------------------------------------------------*/
+.scroller {
+  position: relative;
+}
+
+.scroll-title {
+  padding-right: 80px;
+  border-bottom: $content-borders 1px solid;
+}
+
+.scroller .brand {
+  text-align: center;
+  padding: 0 0 1em 0;
+}
+
+.scroller .owl-next, .scroller .owl-prev {
+  background: url(../img/scroller-buttons-light.png) no-repeat left top;
+  margin: 0;
+  display: inline-block;
+  line-height: 30px;
+  height: 30px;
+  width: 30px;
+  position: absolute;
+  top: 0px;
+  margin: 0;
+
+  /*@include prefix(transition, all 0.3s ease-in-out);*/
+
+  opacity: 0.7;
+}
+
+.scroller .owl-next {
+  right: 0px;
+  background-position: right top;
+}
+
+.scroller .owl-prev {
+  left: 0px;
+}
+
+.scroller .owl-buttons {
+  position: absolute;
+  top: -36px;
+  right: 0px;
+  width: 62px;
+}

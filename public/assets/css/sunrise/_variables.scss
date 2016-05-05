@@ -1,0 +1,143 @@
+/* 
+    Created on : May 5, 2016, 8:00:19 PM
+    Author     : phamthanh
+*/
+
+// site width
+$site-max-width: 66em;
+
+$site-min-width: 20em;
+
+/*================ Typography Variables ================*/
+
+// regular font
+$regular-font: "Noto Sans", sans-serif;
+
+// heading fonts
+$heading-font: "Noto Sans", sans-serif;
+$headings-color: #2b5f77;
+$headings-style: none;
+$headings-weight: normal;
+
+$body-text-color: #234d61;
+$body-bg-color: #fff9c1;
+
+// links
+$link-color: #ff5300;
+$link-active: #cd4200;
+
+$content-borders: #ffffff;
+
+// header row
+$logo-link-color: #ff5300;
+$logo-link-hover: #000000;
+
+// minicart
+$minicart-text: #0a6e99;
+$minicart-text-hover: #333333;
+
+// content
+$content-bg: #ffffff;
+
+// mobile nav
+$mobile-nav-bg: #ff7700;
+$mobile-nav-text: #ffffff;
+
+// Top menu
+$top-menu-bg: #fffce5;
+$top-menu-bg1: #bcebff;
+$top-menu-links: #fe8345;
+$top-menu-links-hover: #ef3226;
+$top-menu-links-border: #c3e7ea;
+$top-menu-sub-bg: #fffce5;
+$top-menu-links-sub: #fe8345;
+$top-menu-links-sub-hover: #333333;
+
+// Slideshow
+$slider-bg: #ffffff;
+$caption_bg: #ff6000;
+$caption_text: #ffffff;
+
+// Sidebar
+$sidebar-bg: #ffffff;
+$accordion-h3-text: #ffffff;
+$accordion-h3-text-active: #ffffff;
+$accordion-h3-bg: #83ceee;
+$accordion-h3-bg1: #67c0e5;
+$accordion-h3-bg-hover: #ffbd3e;
+$accordion-link-text: #ff5300;
+$accordion-link-text-hover: #222222;
+$accordion-link-bg: #ffffff;
+$accordion-link-bg-hover: #f6f6f6;
+$accordion-link-borders: #f6f6f6;
+
+$side-pop-bg: #ffffff;
+$side-pop-headings: #ff5300;
+$side-pop-links: #ff5300;
+$side-pop-links-hover: #222222;
+$side-pop-borders: #dddddd;
+
+$side-news-bg: #ffffff;
+$side-news-headings: #ff5300;
+$side-news-text: #234d61;
+
+$side-social-bg: #ffffff;
+$side-social-headings: #ff5300;
+
+$side-latest-text: #555555;
+
+// collection thumbs
+$thumb-bg: #ffffff;
+$thumb-caption-bg: #ffbd3e;
+$thumb-caption-bg1: #ffb114;
+$thumb-caption-bg-hover: #ffc83d;
+$thumb-title: #ffffff;
+$thumb-price: #aa0000;
+$thumb-sale-bg: #ffea04;
+$thumb-sale-bg1: #ff5300;
+$thumb-sale-text: #ffffff;
+
+// Buttons
+$button-bg: #ffbd3e;
+$button-bg1: #ff7700;
+$button-text: #ffffff;
+$button-text-transform: none;
+$button-weight: normal;
+$button-bg-active: #ff7700;
+$button-hover-active: #ffffff;
+
+// buttons - secondary (cart page)
+$button-sec-bg: #eeeeee;
+$button-sec-text: #44a9d4;
+$button-sec-bg-hover: #ffffff;
+$button-sec-text-hover: #44a9d4;
+
+// fields
+$input-bg: #ffffff;
+$input-text-color: #555555;
+$input-border-color: #70b1cc;
+$input-border-focus: #333333;
+
+// pagination
+$pag-color: #ff5300;
+$pag-hover-text: #ff5300;
+$pag-hover-bg: #ffffff;
+$pag-current-text: #ffffff;
+$pag-current-bg: #ff5300;
+$pag-border: $content-borders;
+
+// accordion (content area)
+$acc-bg: #ffffff;
+$acc-text: #234d61;
+$acc-text-active: #ff5300;
+
+// Footer
+$footer-text: #6b765f;
+$footer-links: #6b765f;
+$footer-links-hover: #000000;
+
+// Customer accounts
+$customer-box-bg: #d0f5ee;
+
+// Blog
+$comments-bg: #ffffff;
