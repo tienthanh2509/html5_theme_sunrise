@@ -1,123 +1,135 @@
 <div id="content">
-    <section role="complementary" id="sidebar">
-        <nav role="navigation" id="menu">
-            <form method="get" action="/search" class="search-form">
-                <fieldset>
-                    <input type="text" placeholder="Search..." name="q" id="search-input">
-                    <button type="submit" class="button">Search</button>
-                </fieldset>
-            </form>
-            <ul id="side-menu">
-                <li> <a class="newfont" href="/">Home</a> </li>
-                <li class="has-sub level-1"> <a class="newfont top-link" href="/collections/toys">Toys</a>
-                    <ul class="animated">
-                        <li class="has-sub level-2"> <a class="top-link" href="/collections/toys/Animal">Animals</a>
-                            <ul>
-                                <li> <a href="/collections/toys/bears" title="">Bears</a> </li>
-                                <li> <a href="/collections/toys/monkeys" title="">Monkeys</a> </li>
-                                <li> <a href="/collections/toys" title="">View all</a> </li>
+    {% block body_content_sidebar %}
+        <section role="complementary" id="sidebar">
+            <nav role="navigation" id="menu">
+                <!-- Thanh tìm kiếm -->
+                {% block body_content_sidebar_search_form %}
+                    <form method="get" action="/search" class="search-form">
+                        <fieldset>
+                            <input type="text" placeholder="Bạn cần tìm gì..." name="q" id="search-input">
+                            <button type="submit" class="button">Tìm</button>
+                        </fieldset>
+                    </form>
+                {% endblock %}
+                <!-- Menu sản phẩm -->
+                {% block body_content_sidebar_menu %}
+                    <ul id="side-menu">
+                        <li><a class="newfont" href="/">Home</a></li>
+                        <li class="has-sub level-1">
+                            <a class="newfont top-link" href="/collections/toys">Toys</a>
+                            <ul class="animated">
+                                <li class="has-sub level-2"> <a class="top-link" href="/collections/toys/Animal">Animals</a>
+                                    <ul>
+                                        <li> <a href="/collections/toys/bears" title="">Bears</a> </li>
+                                        <li> <a href="/collections/toys/monkeys" title="">Monkeys</a> </li>
+                                        <li> <a href="/collections/toys" title="">View all</a> </li>
+                                    </ul>
+                                </li>
+                                <li> <a class="" href="/collections/toys/Vehicle">Vehicles</a> </li>
+                                <li> <a class="" href="/collections/dolls">Dolls</a> </li>
+                                <li> <a class="" href="/collections/all-products/Puzzle">Puzzles</a> </li>
                             </ul>
                         </li>
-                        <li> <a class="" href="/collections/toys/Vehicle">Vehicles</a> </li>
-                        <li> <a class="" href="/collections/dolls">Dolls</a> </li>
-                        <li> <a class="" href="/collections/all-products/Puzzle">Puzzles</a> </li>
-                    </ul>
-                </li>
-                <li class="has-sub level-1"> <a class="newfont top-link" href="/collections/accessories">Accessories</a>
-                    <ul class="animated">
-                        <li> <a class="" href="/collections/footwear">Footwear</a> </li>
-                        <li> <a class="" href="/collections/sunglasses">Sunglasses</a> </li>
-                    </ul>
-                </li>
-                <li> <a class="newfont" href="/blogs/news">Blog</a> </li>
-                <li> <a class="newfont" href="/pages/contact">Contact</a> </li>
-                <li class="has-sub level-1"> <a class="newfont top-link" href="/pages/documentation">Support</a>
-                    <ul class="animated">
-                        <li> <a class="" href="/pages/documentation">Documentation</a> </li>
-                        <li> <a class="" href="/pages/faq">FAQ</a> </li>
-                        <li> <a class="" href="/pages/styles">Styles</a> </li>
-                    </ul>
-                </li>
-                <li> <a class="newfont" href="https://themes.shopify.com/themes/sunrise/styles/spring?ref=patternhead">Buy theme</a> </li>
-                <li class="has-sub"> <a href="/collections/all" class="top-link newfont">Shop by tag</a>
-                    <ul id="search-tags">
-                        <li> <a class="tag" href="/collections/all-products/accessory">accessory</a> <a class="tag" href="/collections/all-products/animal">animal</a> <a class="tag" href="/collections/all-products/bears">bears</a> <a class="tag" href="/collections/all-products/beige">beige</a> <a class="tag" href="/collections/all-products/black">black</a> <a class="tag" href="/collections/all-products/blue">blue</a> <a class="tag" href="/collections/all-products/boots">boots</a> <a class="tag" href="/collections/all-products/brown">brown</a> <a class="tag" href="/collections/all-products/brown-sunglasses">brown sunglasses</a> <a class="tag" href="/collections/all-products/doll">doll</a> <a class="tag" href="/collections/all-products/flower">flower</a> <a class="tag" href="/collections/all-products/gold">gold</a> <a class="tag" href="/collections/all-products/gray">gray</a> <a class="tag" href="/collections/all-products/green">green</a> <a class="tag" href="/collections/all-products/ladies">ladies</a> <a class="tag" href="/collections/all-products/mens">mens</a> <a class="tag" href="/collections/all-products/monkeys">monkeys</a> <a class="tag" href="/collections/all-products/orange">orange</a> <a class="tag" href="/collections/all-products/person">person</a> <a class="tag" href="/collections/all-products/pink">pink</a> <a class="tag" href="/collections/all-products/puzzle">puzzle</a> <a class="tag" href="/collections/all-products/red">red</a> <a class="tag" href="/collections/all-products/retro">retro</a> <a class="tag" href="/collections/all-products/sneakers">sneakers</a> <a class="tag" href="/collections/all-products/sunglasses">sunglasses</a> <a class="tag" href="/collections/all-products/vehicle">vehicle</a> <a class="tag" href="/collections/all-products/vintage">vintage</a> <a class="tag" href="/collections/all-products/white">white</a> <a class="tag" href="/collections/all-products/wood">wood</a> <a class="tag" href="/collections/all-products/yellow">yellow</a> </li>
-                    </ul>
-                </li>
-                <li class="has-sub"> <a href="/blogs/news" class="top-link newfont">Latest posts</a>
-                    <ul id="side-posts">
-                        <li>
-                            <a class="article-link" href="/blogs/news/12288497-test-vimeo-video"> <strong>Test Vimeo Video</strong> <span>Postino - I Love It (OFFICIAL MUSIC VIDEO) from Will Kindrick on Vimeo.</span> </a>
+                        <li class="has-sub level-1"> <a class="newfont top-link" href="/collections/accessories">Accessories</a>
+                            <ul class="animated">
+                                <li> <a class="" href="/collections/footwear">Footwear</a> </li>
+                                <li> <a class="" href="/collections/sunglasses">Sunglasses</a> </li>
+                            </ul>
                         </li>
-                        <li>
-                            <a class="article-link" href="/blogs/news/12288445-test-blog-image"> <strong>Test Blog Image</strong> <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque quis dapibus dui. Aliquam euismod tellus...</span> </a>
-                        </li>
-                        <li>
-                            <a class="article-link" href="/blogs/news/1657222-test-youtube-video"> <strong>Test Youtube Video</strong> <span>Here's an example with a YouTube vid embedded... Looks cool right? Lorem ipsum dolor sit...</span> </a>
-                        </li>
-                        <li>
-                            <a class="article-link" href="/blogs/news/1657212-test-lists"> <strong>Test Lists</strong> <span>Here’s a numbered list: Item one Item two Item three Here’s a bulleted list: Item...</span> </a>
-                        </li>
-                        <li>
-                            <a class="article-link" href="/blogs/news/1657202-test-paragraphs"> <strong>Test Paragraphs</strong> <span>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Proin ac felis vel enim eleifend porta....</span> </a>
-                        </li>
+                        {#<li class="has-sub"> <a href="/collections/all" class="top-link newfont">Shop by tag</a>
+                            <ul id="search-tags">
+                                <li>
+                                    {% for tag in tags %}
+                                    <a class="tag" href="{{ tag.url }}">{{ tag.name }}</a>
+                                    {% endfor %}
+                                </li>
+                            </ul>
+                        </li>#}
+                        {#<li class="has-sub"> <a href="/blogs/news" class="top-link newfont">Latest posts</a>
+                            <ul id="side-posts">
+                                <li>
+                                    <a class="article-link" href="/blogs/news/12288497-test-vimeo-video"> <strong>Test Vimeo Video</strong> <span>Postino - I Love It (OFFICIAL MUSIC VIDEO) from Will Kindrick on Vimeo.</span> </a>
+                                </li>
+                                <li>
+                                    <a class="article-link" href="/blogs/news/12288445-test-blog-image"> <strong>Test Blog Image</strong> <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque quis dapibus dui. Aliquam euismod tellus...</span> </a>
+                                </li>
+                                <li>
+                                    <a class="article-link" href="/blogs/news/1657222-test-youtube-video"> <strong>Test Youtube Video</strong> <span>Here's an example with a YouTube vid embedded... Looks cool right? Lorem ipsum dolor sit...</span> </a>
+                                </li>
+                                <li>
+                                    <a class="article-link" href="/blogs/news/1657212-test-lists"> <strong>Test Lists</strong> <span>Here’s a numbered list: Item one Item two Item three Here’s a bulleted list: Item...</span> </a>
+                                </li>
+                                <li>
+                                    <a class="article-link" href="/blogs/news/1657202-test-paragraphs"> <strong>Test Paragraphs</strong> <span>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Proin ac felis vel enim eleifend porta....</span> </a>
+                                </li>
+                            </ul>
+                        </li>#}
                     </ul>
-                </li>
-            </ul>
-        </nav>
-        <aside class="social-links">
-            <h3>Stay in touch</h3>
-            <a href="https://twitter.com/shopify" title="Twitter"><img src="//cdn.shopify.com/s/files/1/0049/3732/t/28/assets/icon-twitter.png?890626430065088156" alt="Twitter">
-            </a>
-            <a href="https://www.facebook.com/shopify" title="Facebook"><img src="//cdn.shopify.com/s/files/1/0049/3732/t/28/assets/icon-facebook.png?890626430065088156" alt="Facebook">
-            </a>
-            <a href="https://www.pinterest.com/shopify" title="Pinterest"><img src="//cdn.shopify.com/s/files/1/0049/3732/t/28/assets/icon-pinterest.png?890626430065088156" alt="Pinterest">
-            </a>
-            <a href="https://instagram.com/shopify" title="Instagram"><img src="//cdn.shopify.com/s/files/1/0049/3732/t/28/assets/icon-instagram.png?890626430065088156" alt="Instagram">
-            </a>
-        </aside>
-        <aside class="subscribe-form">
-            <h3>Newsletter</h3>
-            <form class="newsletter" action="" method="post">
-                <p>Sign up to our newsletter for the latest news and special offers.</p>
-                <fieldset>
-                    <input type="email" placeholder="type your email..." class="required email input-text" name="EMAIL">
-                    <button type="submit" class="button">Subscribe</button>
-                </fieldset>
-            </form>
-        </aside>
-        <aside class="top-sellers">
-            <h3>Popular products</h3>
-            <ul>
-                <li>
-                    <a href="/products/red-robot" title="Red Robot"><img src="//cdn.shopify.com/s/files/1/0049/3732/products/51_medium.jpg?v=1334938938" alt="Red Robot"> <span class="top-title">Red Robot <i> <span class="money" data-currency-usd="$175.49">$175.49</span> </i>
-                        </span>
+                {% endblock %}
+            </nav>
+
+            {% block body_content_sidebar_social_link %}
+                <aside class="social-links">
+                    <h3>Stay in touch</h3>
+                    <a href="https://twitter.com/shopify" title="Twitter">
+                        <img src="assets/img/social-icon/icon-twitter.png" alt="Twitter">
                     </a>
-                </li>
-                <li>
-                    <a href="/products/rubiks-cube" title="Rubik's Cube"><img src="//cdn.shopify.com/s/files/1/0049/3732/products/10_medium.jpg?v=1334936941" alt="Rubik's Cube"> <span class="top-title">Rubik's Cube <i> <span class="money" data-currency-usd="$9.00">$9.00</span> </i>
-                        </span>
+                    <a href="https://www.facebook.com/shopify" title="Facebook">
+                        <img src="assets/img/social-icon/icon-facebook.png" alt="Facebook">
                     </a>
-                </li>
-                <li>
-                    <a href="/products/dancing-bull" title="Dancing Bull"><img src="//cdn.shopify.com/s/files/1/0049/3732/products/53_medium.jpg?v=1334939034" alt="Dancing Bull"> <span class="top-title">Dancing Bull <i> <del><span class="money" data-currency-usd="$199.00">$199.00</span>
-                                </del> <span class="money" data-currency-usd="$144.50">$144.50</span> </i>
-                        </span>
+                    <a href="https://www.pinterest.com/shopify" title="Pinterest">
+                        <img src="assets/img/social-icon/icon-pinterest.png" alt="Pinterest">
                     </a>
-                </li>
-                <li>
-                    <a href="/products/blue-toy-car" title="Blue Toy Car"><img src="//cdn.shopify.com/s/files/1/0049/3732/products/5_medium.jpg?v=1334936803" alt="Blue Toy Car"> <span class="top-title">Blue Toy Car <i> <span class="money" data-currency-usd="$14.50">$14.50</span> </i>
-                        </span>
+                    <a href="https://instagram.com/shopify" title="Instagram">
+                        <img src="assets/img/social-icon/icon-instagram.png" alt="Instagram">
                     </a>
-                </li>
-                <li>
-                    <a href="/products/cuddly-lion" title="Cuddly Lion"><img src="//cdn.shopify.com/s/files/1/0049/3732/products/36_medium.jpg?v=1334938352" alt="Cuddly Lion"> <span class="top-title">Cuddly Lion <i> <span class="money" data-currency-usd="$7.99">$7.99</span> </i>
-                        </span>
-                    </a>
-                </li>
-            </ul>
-        </aside>
-    </section>
+                </aside>
+            {% endblock %}
+
+            {#<aside class="subscribe-form">
+                <h3>Newsletter</h3>
+                <form class="newsletter" action="" method="post">
+                    <p>Sign up to our newsletter for the latest news and special offers.</p>
+                    <fieldset>
+                        <input type="email" placeholder="type your email..." class="required email input-text" name="EMAIL">
+                        <button type="submit" class="button">Subscribe</button>
+                    </fieldset>
+                </form>
+            </aside>#}
+            <aside class="top-sellers">
+                <h3>Popular products</h3>
+                <ul>
+                    <li>
+                        <a href="/products/red-robot" title="Red Robot"><img src="//cdn.shopify.com/s/files/1/0049/3732/products/51_medium.jpg?v=1334938938" alt="Red Robot"> <span class="top-title">Red Robot <i> <span class="money" data-currency-usd="$175.49">$175.49</span> </i>
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/products/rubiks-cube" title="Rubik's Cube"><img src="//cdn.shopify.com/s/files/1/0049/3732/products/10_medium.jpg?v=1334936941" alt="Rubik's Cube"> <span class="top-title">Rubik's Cube <i> <span class="money" data-currency-usd="$9.00">$9.00</span> </i>
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/products/dancing-bull" title="Dancing Bull"><img src="//cdn.shopify.com/s/files/1/0049/3732/products/53_medium.jpg?v=1334939034" alt="Dancing Bull"> <span class="top-title">Dancing Bull <i> <del><span class="money" data-currency-usd="$199.00">$199.00</span>
+                                    </del> <span class="money" data-currency-usd="$144.50">$144.50</span> </i>
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/products/blue-toy-car" title="Blue Toy Car"><img src="//cdn.shopify.com/s/files/1/0049/3732/products/5_medium.jpg?v=1334936803" alt="Blue Toy Car"> <span class="top-title">Blue Toy Car <i> <span class="money" data-currency-usd="$14.50">$14.50</span> </i>
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/products/cuddly-lion" title="Cuddly Lion"><img src="//cdn.shopify.com/s/files/1/0049/3732/products/36_medium.jpg?v=1334938352" alt="Cuddly Lion"> <span class="top-title">Cuddly Lion <i> <span class="money" data-currency-usd="$7.99">$7.99</span> </i>
+                            </span>
+                        </a>
+                    </li>
+                </ul>
+            </aside>
+        </section>
+    {% endblock %}
+
     <section role="main" id="main">
         <div class="promo-wide">
             <a href="https://themes.shopify.com/themes/sunrise/styles/spring?ref=patternhead"> <img src="//cdn.shopify.com/s/files/1/0049/3732/t/28/assets/promo-wide.jpg?890626430065088156" alt="Sunrise Theme for Shopify"> </a>
