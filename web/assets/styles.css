@@ -544,12 +544,12 @@ input[type=submit].button, button.button {
   -o-transition: all 0.2s ease;
   transition: all 0.2s ease; }
 
-.js #sidebar {
+#sidebar {
   margin-left: -100%;
   float: left;
   width: 25%; }
 
-.js #main {
+#main {
   margin-left: 0;
   float: left;
   width: 100%; }
@@ -570,10 +570,10 @@ input[type=submit].button, button.button {
   font-size: 0.85em; }
 
 /* make sure sidebar is not too tall when it's hidden */
-.js .small-screen #sidebar {
+.small-screen #sidebar {
   height: 200px; }
 
-.js .active-nav #sidebar {
+.active-nav #sidebar {
   height: auto; }
 
 /*------------------------------------------------------------------*/
@@ -767,7 +767,7 @@ input[type=submit].button, button.button {
 #side-menu {
   margin: 0 0 1em 0; }
 
-.js #side-menu ul {
+#side-menu ul {
   display: none; }
 
 #side-menu a.newfont {
@@ -2164,13 +2164,13 @@ input[type=submit].button, button.button {
   .off-canvas-navigation {
     display: none; }
 
-  .js #sidebar {
+  #sidebar {
     float: left;
     margin-left: 0;
     padding: 1em 1em;
     width: 25%; }
 
-  .js #main {
+  #main {
     padding: 1em;
     width: 75%; }
 

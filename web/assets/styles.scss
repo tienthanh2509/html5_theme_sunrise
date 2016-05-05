@@ -395,16 +395,16 @@ input[type=submit].button, button.button { -webkit-appearance: none; }
    @include prefix(transition, all 0.2s ease);
 }
 
-.js #sidebar {margin-left: -100%;float: left;width:25%;}
-.js #main {margin-left: 0;float: left;width:100%;}
+#sidebar {margin-left: -100%;float: left;width:25%;}
+#main {margin-left: 0;float: left;width:100%;}
 .off-canvas-navigation{display: block;overflow: hidden;width: 100%;}
 .active-nav #sidebar {margin-left: 0;width: 100%;}
 .active-nav #main{margin-right: -100%;}
 #main{font-size:0.85em;}
 
 /* make sure sidebar is not too tall when it's hidden */
-.js .small-screen #sidebar{height:200px;}
-.js .active-nav #sidebar{height:auto;}
+.small-screen #sidebar{height:200px;}
+.active-nav #sidebar{height:auto;}
 
 
 
@@ -482,7 +482,7 @@ display:none;
 #side-menu, #side-menu ul{margin:0;padding:0;list-style:none;line-height:1.2;}
 #side-menu{margin:0 0 1em 0;}
 
-.js #side-menu ul{display:none;}
+#side-menu ul{display:none;}
 
 #side-menu a.newfont{font-size:20px;display:block;text-decoration:none;color:$accordion-h3-text;text-transform:none;position:relative;margin:0;padding:0.5em 2em 0.5em 1em;line-height:1.2;border-radius:10px;cursor:pointer;@include linear-gradient($accordion-h3-bg, $accordion-h3-bg1);@include prefix(transition, all 0.3s ease);}
 #side-menu a.newfont:hover{background:$accordion-h3-bg-hover;}
@@ -1114,8 +1114,8 @@ background:url(//cdn.shopify.com/s/files/1/0049/3732/t/28/assets/scroller-button
 
 .off-canvas-navigation {display:none;}
 
-.js #sidebar {float: left;margin-left: 0;padding: 1em 1em;width: 25%;}
-.js #main {padding: 1em;width: 75%;}
+#sidebar {float: left;margin-left: 0;padding: 1em 1em;width: 25%;}
+#main {padding: 1em;width: 75%;}
 
 // block grid
 .columns1 { margin: 0; }
