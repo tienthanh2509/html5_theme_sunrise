@@ -1,12 +1,14 @@
 <!DOCTYPE html>
 <html>
 <head>
-  {% include 'header.html.twig' %}
+    {% include 'header.html.twig' %}
 </head>
 
 <body>
-  {% include 'nav.html.twig' %}
-
-  {% block content %}{% endblock %}
+    <div id="site-wrap">
+    {% include 'nav.html.twig' %}
+    {% block content %}{% endblock %}
+    </div>
+    {% include 'footer.html.twig' %}
 </body>
 </html>
