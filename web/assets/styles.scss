@@ -383,7 +383,7 @@ select {
   border-radius: 5px;
   border: 1px solid $input-border-color;
   background-position: right center;
-  background-image: url(//cdn.shopify.com/s/files/1/0049/3732/t/28/assets/ico-select.svg?15808547941090741713);
+  background-image: url(../img/ico-select.svg);
   background-repeat: no-repeat;
   background-position: right 10px center;
   background-color: $input-bg;
@@ -446,7 +446,7 @@ body {
   color: $body-text-color;
   background: $body-bg-color;
   font-family: $regular-font;
-  background-image: url(//cdn.shopify.com/s/files/1/0049/3732/t/28/assets/bg-sky-gradient.png?15808547941090741713);
+  background-image: url(../img/bg-sky-gradient.png);
   background-position: top center;
   background-repeat: repeat-x;
   background-attachment: scroll;
@@ -970,7 +970,7 @@ input[type=submit].button, button.button {
   margin-top: -20px;
   z-index: 200;
   opacity: 0.3;
-  background: url(//cdn.shopify.com/s/files/1/0049/3732/t/28/assets/slide-buttons.png?15808547941090741713) no-repeat left top;
+  background: url(../img/slide-buttons.png) no-repeat left top;
 }
 
 .slide-prev {
@@ -1227,7 +1227,7 @@ input[type=submit].button, button.button {
   margin: 0;
   color: $input-text-color;
   border: $input-border-color 1px solid;
-  background: #fff url(//cdn.shopify.com/s/files/1/0049/3732/t/28/assets/icon-search.png?15808547941090741713) no-repeat 10px center;
+  background: #fff url(../img/icon-search.png) no-repeat 10px center;
   font-size: 0.85em;
   line-height: normal;
 }
@@ -1683,7 +1683,7 @@ input[type=submit].button, button.button {
 
 /* mouse grab icon */
 .grabbing {
-  cursor: url(//cdn.shopify.com/s/files/1/0049/3732/t/28/assets/grabbing.png?15808547941090741713) 8 8, move;
+  cursor: url(../img/grabbing.png) 8 8, move;
 }
 
 /* fix */
@@ -1708,7 +1708,7 @@ input[type=submit].button, button.button {
 }
 
 .owl-next, .owl-prev {
-  background: url(//cdn.shopify.com/s/files/1/0049/3732/t/28/assets/slide-buttons.png?15808547941090741713) no-repeat left top;
+  background: url(../img/slide-buttons.png) no-repeat left top;
   margin: 0;
   display: inline-block;
   line-height: 40px;
@@ -2116,7 +2116,7 @@ input[type=submit].button, button.button {
 }
 
 .scroller .owl-next, .scroller .owl-prev {
-  background: url(//cdn.shopify.com/s/files/1/0049/3732/t/28/assets/scroller-buttons-light.png?15808547941090741713) no-repeat left top;
+  background: url(../img/scroller-buttons-light.png) no-repeat left top;
   margin: 0;
   display: inline-block;
   line-height: 30px;
@@ -2571,7 +2571,7 @@ input[type=submit].button, button.button {
 /*------------------------------------------------------------------*/
 
 #footer {
-  background: url(//cdn.shopify.com/s/files/1/0049/3732/t/28/assets/footer-hills.png?15808547941090741713) repeat-x scroll center top transparent;
+  background: url(../img/footer-hills.png) repeat-x scroll center top transparent;
 }
 
 #footer {
@@ -2638,7 +2638,7 @@ input[type=submit].button, button.button {
 }
 
 #scroll-top {
-  background: url(//cdn.shopify.com/s/files/1/0049/3732/t/28/assets/button-top.png?15808547941090741713) no-repeat center center;
+  background: url(../img/button-top.png) no-repeat center center;
   position: fixed;
   right: 2em;
   bottom: 2em;
@@ -2929,7 +2929,7 @@ input[type=submit].button, button.button {
     position: absolute;
     right: 0px;
     top: 0px;
-    background: url(//cdn.shopify.com/s/files/1/0049/3732/t/28/assets/cloud-cart.png?15808547941090741713) no-repeat left top;
+    background: url(../img/cloud-cart.png) no-repeat left top;
     color: #0A6E99;
     height: 102px;
     margin: 0px 0 0;
@@ -3961,7 +3961,7 @@ img.mfp-img {
   position: absolute;
   right: 0px;
   top: 0px;
-  background: url(//cdn.shopify.com/s/files/1/0049/3732/t/28/assets/cloud-cart.png?15808547941090741713) no-repeat left top;
+  background: url(../img/cloud-cart.png) no-repeat left top;
   color: #0A6E99;
   height: 102px;
   margin: 0px 0 0;
