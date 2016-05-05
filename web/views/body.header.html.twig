@@ -1,0 +1,19 @@
+<header id="header" class="clearfix">
+    <div class="row clearfix">
+        <div class="logo">
+            <h1><a class="newfont" href="/" title="Sunrise Theme for Shopify"><img src="//cdn.shopify.com/s/files/1/0049/3732/t/28/assets/logo.png?890626430065088156" alt="Sunrise Theme for Shopify"></a></h1></div>
+        <div id="curr-switcher">
+            <label for="currencies">Pick a currency</label>
+            <select id="currencies" name="currencies">
+                <option value="USD" selected="selected">USD</option>
+                <option value="GBP">GBP</option>
+                <option value="EUR">EUR</option>
+                <option value="CAD">CAD</option>
+            </select>
+        </div>
+        <div class="login-top hide-mobile"> <a href="/account/login">Log in</a> | <a href="/account/register">Sign up</a> </div>
+        <div class="cart-info hide-mobile"> <a href="/cart"><em>1</em> <span>item in your cart</span></a> </div>
+    </div>
+    {% block body_nav %}{% include 'nav.html.twig' %}{% endblock %}
+    <nav class="off-canvas-navigation show-mobile newfont"> <a href="#menu" class="menu-button">Menu</a> <a href="/account" class="">Account</a> <a href="/cart" class="">Cart</a> </nav>
+</header>
