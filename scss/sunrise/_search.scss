@@ -1,0 +1,54 @@
+/* 
+    Created on : May 5, 2016, 7:47:12 PM
+    Author     : phamthanh
+*/
+
+/*-------------------------------------------------
+   SEARCH 
+-------------------------------------------------*/
+.search-form input[type="text"] {
+    float: left;
+    width: 55%;
+}
+
+.search-form .button {
+    float: left;
+    min-width: 40%;
+}
+
+#search-results .search-form {
+    margin: 0 0 1em 0;
+}
+
+#search-results ol {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+#search-results ol li {
+    margin: 1em 0;
+    padding: 1em 0 0 0;
+    border-top: $content-borders 1px solid;
+}
+
+.res-image {
+    float: left;
+    max-width: 20%;
+    margin: 0 20px 5px 0;
+}
+
+#search-results li h4, #search-results li p {
+    margin: 0;
+    padding: 0;
+}
+
+#search-results li p {
+    font-weight: bold;
+}
+
+#search-results li .search-result-text {
+    display: block;
+    clear: both;
+    font-size: 0.8em;
+}

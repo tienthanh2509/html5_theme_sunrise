@@ -1,0 +1,164 @@
+/* 
+    Created on : May 5, 2016, 7:55:41 PM
+    Author     : phamthanh
+*/
+
+/*------------------------------------------------------------------*/
+/* SIDEBAR - ACCORDION
+/*------------------------------------------------------------------*/
+#sidebar {
+    background: $sidebar-bg;
+    background: rgba($sidebar-bg, 0.25);
+}
+
+#side-menu, #side-menu ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    line-height: 1.2;
+}
+
+#side-menu {
+    margin: 0 0 1em 0;
+}
+
+#side-menu ul {
+    display: none;
+}
+
+#side-menu a.newfont {
+    font-size: 20px;
+    display: block;
+    text-decoration: none;
+    color: $accordion-h3-text;
+    text-transform: none;
+    position: relative;
+    margin: 0;
+    padding: 0.5em 2em 0.5em 1em;
+    line-height: 1.2;
+    border-radius: 10px;
+    cursor: pointer;
+
+    @include linear-gradient($accordion-h3-bg, $accordion-h3-bg1);
+
+    @include prefix(transition, all 0.3s ease);
+}
+
+#side-menu a.newfont:hover {
+    background: $accordion-h3-bg-hover;
+}
+
+#side-menu a.newfont:focus {
+    outline: none;
+}
+
+#side-menu > li.active > a {
+    background: $accordion-h3-bg-hover;
+    color: $accordion-h3-text-active;
+}
+
+// accordion arrows
+#side-menu .top-link:after {
+    border-color: $accordion-h3-text rgba(255, 255, 255, 0) rgba(255, 255, 255, 0);
+    border-style: solid;
+    border-width: 5px;
+    content: "";
+    display: block;
+    height: 0;
+    margin-top: -2.5px;
+    position: absolute;
+    right: 1em;
+    top: 50%;
+    width: 0;
+}
+
+#side-menu > li.active > .top-link:after {
+    border: none;
+    content: "";
+    display: block;
+    height: 0;
+    margin-top: -2.5px;
+    opacity: 1.0;
+    position: absolute;
+    right: 1em;
+    top: 50%;
+    width: 0;
+    border-left: 5px solid rgba(255, 255, 255, 0);
+    border-right: 5px solid rgba(255, 255, 255, 0);
+    border-bottom: 5px solid $accordion-h3-text-active;
+}
+
+#side-menu ul {
+    background: $accordion-link-bg;
+    margin: 0 1em;
+}
+
+#side-menu ul a:hover {
+    padding-left: 20px;
+}
+
+#side-menu ul ul {
+    margin: 0;
+}
+
+#side-menu ul ul a {
+    padding-left: 30px;
+}
+
+#side-menu ul ul a:hover {
+    padding-left: 40px;
+}
+
+#side-menu ul a {
+    color: $accordion-link-text;
+    display: block;
+    text-decoration: none;
+    padding: 0.5em 1em;
+    border-bottom: $accordion-link-borders 1px solid;
+    font-size: 0.85em;
+
+    @include prefix(transition, all 0.2s ease);
+}
+
+#side-menu ul a:hover, #side-menu ul .active > a {
+    background: $accordion-link-bg-hover;
+    color: $accordion-link-text-hover;
+}
+
+#side-menu ul li.has-sub > a:after {
+    border-color: $accordion-link-text rgba(255, 255, 255, 0) rgba(255, 255, 255, 0);
+    border-style: solid;
+    border-width: 5px;
+    content: "";
+    display: block;
+    height: 0;
+    margin-top: -2.5px;
+    position: absolute;
+    right: 1em;
+    top: 50%;
+    width: 0;
+}
+
+#side-menu ul li.has-sub.active > a:after {
+    border: none;
+    content: "";
+    display: block;
+    height: 0;
+    margin-top: -2.5px;
+    opacity: 1.0;
+    position: absolute;
+    right: 1em;
+    top: 50%;
+    width: 0;
+    border-left: 5px solid rgba(255, 255, 255, 0);
+    border-right: 5px solid rgba(255, 255, 255, 0);
+    border-bottom: 5px solid $accordion-link-text;
+}
+
+#side-menu ul li a {
+    position: relative;
+}
+
+#side-menu li {
+    position: relative;
+}

@@ -1,0 +1,107 @@
+/* 
+    Created on : May 5, 2016, 7:49:56 PM
+    Author     : phamthanh
+*/
+
+/*-------------------------------------------------
+   CUSTOMER ACCOUNTS
+-------------------------------------------------*/
+#customer-area {}
+
+#customer-area table {
+    background: #fff;
+    background: rgba(255, 255, 255, 0.75);
+}
+
+#customer-area .note {
+    margin: 0 0 1em 0;
+    padding: 0;
+}
+
+#customer-area .feedback {
+    margin: 0 0 1em 0;
+}
+
+#customer-area .feedback ul {
+    margin: 0;
+    padding: 0 0 0 2em;
+}
+
+#customer-area label {
+    font-size: 0.8em;
+    display: block;
+}
+
+#customer-area form p {
+    margin: 0 0 1em 0;
+    padding: 0;
+}
+
+#customer-area form p.form-action {
+    padding-top: 1em;
+}
+
+#customer-area form input {
+    margin: 0;
+}
+
+.customer-area th {
+    font-weight: normal;
+}
+
+#login-form h2, #login-sub h2 {
+    margin: 0 0 0.75em 0;
+}
+
+.box-form {
+    background: $customer-box-bg;
+    padding: 2em;
+    margin: 0 0 1em 0;
+    border-radius: 12px;
+
+    @include prefix(box-shadow, "0px 1px 1px rgba(0, 0, 0, 0.1)");
+}
+
+.box-form input {}
+
+.box-form select {}
+
+.customer-area .pg-title {
+    margin: 0 0 .75em 0;
+}
+
+#login-form, #login-sub, .customer_address, #order_payment, #order_shipping {}
+
+.add-address {
+    margin: 0 0 2em 0;
+}
+
+.customer_address p {
+    margin: 0;
+    padding: 0;
+}
+
+.default-address {
+    font-weight: bold;
+    font-style: italic;
+}
+
+#order_address h5 {
+    font-size: 1em;
+}
+
+#order_address h5, #order_address p {
+    margin: 0;
+    padding: 0;
+}
+
+#order_payment, #order_shipping {}
+
+.order_date {
+    margin: 0 0 1em 0;
+    font-style: italic;
+}
+
+.order_section_title {
+    font-weight: bold;
+}

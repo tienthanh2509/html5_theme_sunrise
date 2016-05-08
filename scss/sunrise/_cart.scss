@@ -1,0 +1,159 @@
+/* 
+    Created on : May 5, 2016, 7:48:26 PM
+    Author     : phamthanh
+*/
+
+/*-------------------------------------------------
+   CART
+-------------------------------------------------*/
+.cart-header {
+    display: none;
+}
+
+.cart-contents {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.cart-contents li {
+    border-bottom: $content-borders 1px solid;
+    margin: 0 0 10px 0;
+    padding: 0 0 10px 0;
+}
+
+.cart-col1 {
+    float: left;
+    margin: 0 0px 10px 0;
+    width: 20%;
+}
+
+.cart-col2, .cart-col3, .cart-col4 {
+    float: right;
+    width: 75%;
+}
+
+.cart-col2 a {
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.short-desc {
+    font-size: 0.8em;
+    margin: 0;
+    padding: 0;
+    display: none;
+}
+
+.cart-col3 {
+    font-weight: bold;
+}
+
+.cart-col4 label {
+    display: block;
+    float: left;
+    font-size: 0.8em;
+    line-height: 2.5;
+    margin: 0 10px 0 0;
+}
+
+.cart-col4 input {
+    width: 50px;
+    float: left;
+    margin: 0 10px 0 0;
+}
+
+.cart-col4 a {
+    font-size: 0.8em;
+}
+
+.cart-col5, .cart-col6 {
+    display: none;
+}
+
+.cart-sub-actions {
+    border-bottom: $content-borders 1px solid;
+    padding: 0 0 10px 0;
+    margin: 0 0 10px 0;
+}
+
+.cart-sub-actions a {
+    text-decoration: none;
+    display: inline-block;
+    margin: 0 0 0.5em 0;
+}
+
+.action-main {
+    margin: 0 0 2em 0;
+}
+
+#cart-note {
+    margin: 0 0 1em 0;
+    padding: 0 0 1em 0;
+}
+
+#cart-note textarea {
+    min-height: 100px;
+}
+
+.cart-tot2 {}
+
+.cart-tot2 h5 {
+    font-size: 2em;
+}
+
+.cart-tot2 .button {
+    font-size: 2em;
+    padding: 0.5em 1.5em;
+    width: 100%;
+}
+
+#shipping-calculator {
+    border-bottom: $content-borders 1px solid;
+    margin: 0 0 1em 0;
+    padding: 0 0 1em 0;
+}
+
+#shipping-calculator h3 {
+    font-size: 1.2em;
+}
+
+#shipping-calculator label {
+    display: block;
+}
+
+#shipping-calculator select {
+    padding: 0.5em;
+    width: 100%;
+}
+
+#shipping-calculator p {
+    margin: 0 0 1em 0;
+    padding: 0;
+}
+
+#wrapper-response {
+    display: none;
+}
+
+#shipping-rates {
+    margin: 0;
+    padding: 0 0 0 20px;
+}
+
+#agree-terms {
+    text-align: center;
+    margin: 0;
+    padding: 0.75em 0 0 0;
+}
+
+#agree-terms.highlight {
+    background: yellow;
+    color: #222;
+    padding: 1em;
+    border-radius: 5px;
+}
+
+#agree-terms.highlight a {
+    color: inherit;
+}

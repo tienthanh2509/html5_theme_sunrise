@@ -1,0 +1,39 @@
+/* 
+    Created on : May 5, 2016, 7:52:46 PM
+    Author     : phamthanh
+*/
+
+/*------------------------------------------------------------------*/
+/* PAGINATION
+/*------------------------------------------------------------------*/
+.paginate {
+    text-align: center;
+    border-top: $pag-border 1px solid;
+    padding: 0.8em 0;
+    line-height: 1;
+}
+
+.paginate span {
+    color: $pag-color;
+    display: inline-block;
+    border-radius: 50%;
+}
+
+.paginate a {
+    color: $pag-color;
+    display: inline-block;
+    padding: 0.5em 0.75em;
+    text-decoration: none;
+    border-radius: 50%;
+}
+
+.paginate a:hover, .paginate a:focus {
+    color: $pag-hover-text;
+    background: $pag-hover-bg;
+}
+
+.paginate .current {
+    background: $pag-current-bg;
+    color: $pag-current-text;
+    padding: 0.5em 0.75em;
+}
